@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="script.js"></script>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+		<link rel="shortcut icon" type="image/x-icon" href="" />
+	</head>
+
+	<body>
+
+		<nav>
+
+			<a href='index'>Home</a>
+			<a href='signup'>Signup</a>
+
+
+		</nav>
+
+		<h1>
+			Login
+		</h1>
+
+		<div class='container'>
+			<form action='/~/techacks_hackathon/login' method='POST' enctype='multipart/form-data'>
+			<!-- Username and password are mandatory to create an account -->
+			<input type='email' name='username' placeholder='Email' required>
+			<input type='password' name='password' placeholder='Password' required>
+			
+
+
+			<input type='submit' value='Login'>
+			<input type='hidden' name='redirecturl' value='/~/techacks_hackathon/account'>
+
+		</form>
+		</div>
+		
+
+
+		<footer>
+			2021 Website Name
+		</footer>
+
+	</body>
+
+</html>

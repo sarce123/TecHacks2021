@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="script.js"></script>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+		<link rel="shortcut icon" type="image/x-icon" href=""/>
+	</head>
+	<body>
+		
+		<nav>
+			<a href='index'>Home</a>
+			<a href='opportunities'>Opportunities</a>
+			<a href='contact'>Contact Us</a>
+			<a onclick='logout()'>Logout</a>
+			<a href='account'>Account</a>
+		</nav>
+		
+		<div class="center">
+			<h1>
+			Account!
+		</h1>
+			{{#private}}
+			<h4>{{username}}</h4>
+			<img src='{{profile}}' width="200px">
+			{{/private}}
+			
+			
+			{{^private}}
+			<script>
+				location.href = 'index';
+			</script>
+			{{/private}}
+		
+		
+		
+		</div>
+		
+			
+		
+		
+		
+		<footer>
+			2021 Ambitious Youth
+		</footer>
+		
+	</body>
+</html>
